@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
- * main: prints a number followed by a nee line.
- * @argc: number of arguments count.
- * @argv: an array of pointers.
+ * main - Prints the number of arguments passed to it.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * return: always O.
+ * Return: Always 0.
  */
-int main(int __attribute((__unused__)) argc, char *argv[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
 	printf("%d\n", argc - 1);
-	return(0);
+
+	return (0);
 }
