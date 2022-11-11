@@ -3,11 +3,11 @@
 #include <string.h>
 
 /**
- * string_ nconcat - concatenates two strings.
- * @s1: first string to join.
- * @s2: string to join.
+ * string_nconcat - concatenates two strings
+ * @s1: first string to join
+ * @s2: string to join
  * @n: no
- * Return: Null or Pointer.
+ * Return: NULL or pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -20,8 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	
-	if (n < len2)
+	if (n > len2)
 		n = len2;
 	p = malloc(len1 + n + 1);
 	if (p == NULL)
